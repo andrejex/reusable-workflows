@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Hello from the other side ${{ input.myname }}!"
+      - run: echo "Hello from the other side ${{ inputs.myname }}!"
     
