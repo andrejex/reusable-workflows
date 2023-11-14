@@ -1,0 +1,15 @@
+name: Print out Hello from the other side
+
+on:
+  wokflow_call:
+  inputs:
+    myname:
+      required: true
+      type: string 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      run: echo "Hello from the other side ${{ input.myname }}!"
+    
